@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /backup/
+Allow: /
+
+Sitemap: https://nasty082008.github.io/nasty082008.github.io./sitemap.xml
