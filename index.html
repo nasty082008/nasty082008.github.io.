@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CV375BMZZJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CV375BMZZJ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Beauty Store | Корейская уходовая косметика</title>
+    <meta name="description" content="Интернет-магазин качественной корейской косметики. Сыворотки, маски для губ, тоники. Натуральный уход и быстрая доставка по Самаре.">
+
+    <meta property="og:title" content="Beauty Store – уходовая косметика">
+    <meta property="og:description" content="Anua, Laneige, Glow Recipe и другие бренды. Уход для сияющей кожи.">
+    <meta property="og:image" content="Group3.png"> 
+    <meta property="og:type" content="website">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108262038', 'ym');
+
+    ym(108262038, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/108262038" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+   
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Beauty Store",
+        "description": "Интернет-магазин уходовой косметики",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Ново-Садовая",
+            "addressLocality": "Самара",
+            "addressCountry": "RU"
+        },
+        "telephone": "8 983 567 88 44",
+        "email": "magazinkosm@gmail.com",
+        "openingHours": "Mo-Su 09:00-21:00",
+        "sameAs": [
+            "https://instagram.com/beautystore",
+            "https://t.me/beautystore",
+            "https://facebook.com/beautystore"
+        ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            padding-top: 80px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 92%;
+            }
+        }
+
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo img {
+            height: 45px;
+            background: #f8dce3;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                height: 55px;
+            }
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 8px;
+            display: inline-block;
+        }
+
+        /* ВЫПАДАЮЩЕЕ МЕНЮ */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 600px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            z-index: 1001;
+            top: 40px;
+            left: -200px;
+            gap: 40px;
+        }
+
+        .dropdown.active .dropdown-content {
+            display: flex;
+        }
+
+        .dropdown-section {
+            flex: 1;
+        }
+
+        .dropdown-section h4 {
+            color: #d88ca0;
+            margin-bottom: 15px;
+            font-size: 16px;
+            padding: 8px 0;
+        }
+
+        .dropdown-section a {
+            display: block;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding: 10px 5px;
+        }
+
+        .user-tools {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 2px solid #f0d5dd;
+        }
+
+        /* УВЕЛИЧЕННЫЕ ЭЛЕМЕНТЫ (44px) */
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #f8f8f8;
+            border-radius: 25px;
+            padding: 12px 18px;
+            width: 220px;
+            min-height: 48px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .search-box span {
+            margin-right: 10px;
+            color: #d88ca0;
+            font-size: 18px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            position: relative;
+            color: #333;
+            padding: 12px 8px;
+            min-height: 48px;
+            min-width: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: #d88ca0;
+            color: white;
+            font-size: 12px;
+            padding: 3px 7px;
+            border-radius: 50%;
+            min-width: 22px;
+            min-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .burger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 12px;
+            min-height: 48px;
+            min-width: 48px;
+            justify-content: center;
+        }
+
+        .burger span {
+            width: 28px;
+            height: 4px;
+            background: #d88ca0;
+            border-radius: 4px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 18px 0;
+            border-bottom: 1px solid #f8dce3;
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            min-height: 55px;
+        }
+
+        .mobile-menu .category-links {
+            padding-left: 20px;
+            background: #f9f9f9;
+            margin: 8px 0;
+            border-radius: 12px;
+        }
+
+        .mobile-menu .search-box {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .menu-overlay.active {
+            display: block;
+        }
+
+        /* ИСПРАВЛЕННАЯ КАРУСЕЛЬ - картинки не съезжают */
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Фиксированная высота для всех экранов */
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        @media (max-width: 1024px) {
+            .slider {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slider {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slider {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .slider {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .slider {
+                height: 180px;
+            }
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            width: 33.333%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* АДАПТИВНЫЕ ИЗОБРАЖЕНИЯ ЧЕРЕЗ PICTURE */
+        .slide picture,
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Равномерно заполняет контейнер */
+            object-position: center; /* Центрирует изображение */
+            display: block;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #s1:checked ~ .slides { transform: translateX(0); }
+        #s2:checked ~ .slides { transform: translateX(-33.333%); }
+        #s3:checked ~ .slides { transform: translateX(-66.666%); }
+
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .navigation label {
+            width: 16px;
+            height: 16px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #d88ca0;
+            min-width: 24px;
+            min-height: 24px;
+        }
+
+        #s1:checked ~ .navigation label[for="s1"],
+        #s2:checked ~ .navigation label[for="s2"],
+        #s3:checked ~ .navigation label[for="s3"] {
+            background: #d88ca0;
+        }
+
+        .products {
+            padding: 60px 0 40px;
+            background: #fafafa;
+        }
+
+        .products h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #b96b7e;
+        }
+
+        @media (max-width: 480px) {
+            .products h1 {
+                font-size: 1.6em;
+            }
+            .products h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* АДАПТИВНЫЕ ИЗОБРАЖЕНИЯ В КАРТОЧКАХ */
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            background: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .card img {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card img {
+                height: 200px;
+            }
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: #b56576;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        /* УВЕЛИЧЕННАЯ КНОПКА */
+        .card button {
+            margin-top: 5px;
+            padding: 14px 24px;
+            border: none;
+            background: #f3c9d3;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 16px;
+            min-width: 140px;
+            min-height: 48px;
+            font-weight: 600;
+        }
+
+        .contact-section {
+            background: #ffffff;
+            padding: 50px 0;
+            border-top: 1px solid #f0d5dd;
+            border-bottom: 1px solid #f0d5dd;
+        }
+
+        .contact-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .contact-info h3 {
+            font-size: 32px;
+            font-weight: 500;
+            color: #d88ca0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info h3 {
+                font-size: 28px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        /* АДАПТИВНАЯ ФОРМА */
+        .contact-form {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+            background: #fff;
+            padding: 8px 8px 8px 20px;
+            border-radius: 60px;
+            box-shadow: 0 4px 12px rgba(216, 140, 160, 0.15);
+            border: 1px solid #fadbe4;
+        }
+
+        @media (max-width: 680px) {
+            .contact-form {
+                width: 100%;
+                border-radius: 30px;
+                padding: 8px;
+            }
+        }
+
+        /* УВЕЛИЧЕННОЕ ПОЛЕ ВВОДА */
+        .contact-form input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            padding: 14px 5px;
+            width: 260px;
+            background: transparent;
+            min-height: 48px;
+        }
+
+        @media (max-width: 680px) {
+            .contact-form input {
+                width: 100%;
+                padding: 14px 15px;
+                border-bottom: 1px solid #fadbe4;
+            }
+        }
+
+        /* УВЕЛИЧЕННАЯ КНОПКА */
+        .contact-form button {
+            background: #d88ca0;
+            border: none;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            min-height: 52px;
+            min-width: 140px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 680px) {
+            .contact-form button {
+                width: 100%;
+                border-radius: 30px;
+                padding: 16px;
+            }
+        }
+
+        footer {
+            background: #f8dce3;
+            padding: 50px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 35px;
+            }
+        }
+
+        .socials {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .socials span {
+            padding: 12px 8px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        footer p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 15px;
+            padding: 6px 0;
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+            padding: 8px;
+            display: inline-block;
+            min-height: 44px;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links, .user-tools {
+                display: none;
+            }
+            .burger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="menu-overlay" id="menuOverlay" onclick="closeMobileMenu()"></div>
+
+<header>
+    <div class="container header-row">
+        <div class="logo">
+            <a href="#" aria-label="На главную">
+               
+                <picture>
+                    <source srcset="Group3.png" media="(max-width: 480px)">
+                    <img src="Group3.png" alt="Логотип Beauty Store" width="55" height="55">
+                </picture>
+            </a>
+        </div>
+
+        <div class="nav-menu">
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <div class="dropdown" id="catalogDropdown">
+                    <a href="#" onclick="toggleDropdown(event)">Каталог ▼</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-section">
+                            <h4>Уход за лицом</h4>
+                            <a href="#">Очищение</a>
+                            <a href="#">Тонизирование</a>
+                            <a href="#">Сыворотки</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Уход за губами</h4>
+                            <a href="#">Бальзамы</a>
+                            <a href="#">Ночные маски</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>По брендам</h4>
+                            <a href="#">Anua</a>
+                            <a href="#">Laneige</a>
+                            <a href="#">Glow Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+                <a href="#">Доставка и оплата</a>
+                <a href="article.html">Статья</a>
+            </div>
+
+            <div class="user-tools">
+                <div class="search-box">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Поиск">
+                </div>
+                <a href="#" class="icon-btn">Вход</a>
+                <a href="#" class="icon-btn">
+                    Корзина
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Главная</a>
+        <a href="#"><b>Каталог</b></a>
+        <div class="category-links">
+            <a href="#" style="padding-left: 30px;">✓ Уход за лицом</a>
+            <a href="#" style="padding-left: 30px;">✓ Уход за губами</a>
+            <a href="#" style="padding-left: 30px;">✓ По брендам</a>
+        </div>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        <a href="#">Доставка и оплата</a>
+        <a href="article.html">Статья</a>
+        <a href="#">Вход</a>
+        <a href="#">Корзина</a>
+        <div class="search-box" style="width: 100%; margin-top: 10px;">
+            <span>🔍</span>
+            <input type="text" placeholder="Поиск">
+        </div>
+    </div>
+</header>
+
+<main>
+   
+    <section class="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+
+        <div class="slides">
+            <div class="slide">
+               
+                <picture>
+                    <source srcset="косметика.jpg" media="(max-width: 320px)">
+                    <source srcset="косметика.jpg" media="(max-width: 480px)">
+                    <source srcset="косметика.jpg" media="(max-width: 768px)">
+                    <source srcset="косметика.jpg" media="(max-width: 1024px)">
+                    <img src="косметика.jpg" alt="Косметика слайд 1" onerror="this.src='косметика.jpg'">
+                </picture>
+            </div>
+            <div class="slide">
+                <picture>
+                    <source srcset="к2.jpg" media="(max-width: 320px)">
+                    <source srcset="к2.jpg" media="(max-width: 480px)">
+                    <source srcset="к2.jpg" media="(max-width: 768px)">
+                    <source srcset="к2.jpg" media="(max-width: 1024px)">
+                    <img src="к2.jpg" alt="Косметика слайд 2" onerror="this.src='к2.jpg'">
+                </picture>
+            </div>
+            <div class="slide">
+                <picture>
+                    <source srcset="к5.jpg" media="(max-width: 320px)">
+                    <source srcset="к5.jpg" media="(max-width: 480px)">
+                    <source srcset="к5.jpg" media="(max-width: 768px)">
+                    <source srcset="к5.jpg" media="(max-width: 1024px)">
+                    <img src="к5.jpg" alt="Косметика слайд 3" onerror="this.src='к5.jpg'">
+                </picture>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="s1"></label>
+            <label for="s2"></label>
+            <label for="s3"></label>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h1>Магазин уходовой косметики</h1>
+            <h2>Популярные товары</h2>
+
+            <div class="product-grid">
+                
+                <div class="card">
+                    <img srcset="к3.jpg 320w,
+                                 к3.jpg 480w,
+                                 к3.jpg 800w"
+                         sizes="(max-width: 320px) 280px,
+                                (max-width: 480px) 440px,
+                                (max-width: 768px) 340px,
+                                800px"
+                         src="к3.jpg"
+                         alt="Anua Peach 70% Niacin Serum"
+                         onerror="this.src='к3.jpg'; this.srcset=''"
+                         width="800" height="800">
+                    <h3>Anua Peach 70% Niacin Serum</h3>
+                    <p>Сыворотка для лица с экстрактом персика и ниацинамидом.</p>
+                    <button>Подробнее</button>
+                </div>
+
+             
+                <div class="card">
+                    <img srcset="т2.jpg 320w,
+                                 т2.jpg 480w,
+                                 т2.jpg 800w"
+                         sizes="(max-width: 320px) 280px,
+                                (max-width: 480px) 440px,
+                                (max-width: 768px) 340px,
+                                800px"
+                         src="т2.jpg"
+                         alt="Laneige Lip Sleeping Mask Berry"
+                         onerror="this.src='т2.jpg'; this.srcset=''"
+                         width="800" height="800">
+                    <h3>Laneige Lip Sleeping Mask Berry</h3>
+                    <p>Ночная маска-бальзам для губ с выраженным ягодным ароматом.</p>
+                    <button>Подробнее</button>
+                </div>
+
+                
+                <div class="card">
+                    <img srcset="т3.jpg 320w,
+                                 т3.jpg 480w,
+                                 т3.jpg 800w"
+                         sizes="(max-width: 320px) 280px,
+                                (max-width: 480px) 440px,
+                                (max-width: 768px) 340px,
+                                800px"
+                         src="т3.jpg"
+                         alt="Glow Recipe Watermelon Glow PHA+BHA"
+                         onerror="this.src='т3.jpg'; this.srcset=''"
+                         width="800" height="800">
+                    <h3>Glow Recipe Watermelon Glow PHA+BHA</h3>
+                    <p>Тонер для лица, созданный для ухода за кожей, склонной к жирности.</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Anua Peach 70% Niacin Serum",
+        "description": "Сыворотка для лица с экстрактом персика и ниацинамидом.",
+        "offers": {
+            "@type": "Offer",
+            "price": "2490",
+            "priceCurrency": "RUB"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "124"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Екатерина"
+                },
+                "reviewBody": "Отличная сыворотка, кожа стала мягче.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <section class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h3>Связаться с нами</h3>
+            </div>
+            <div class="contact-form">
+                <input type="tel" placeholder="Введите номер телефона">
+                <button>Отправить</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div>
+            <div class="socials">
+                <span>Instagram</span>
+                <span>Telegram</span>
+                <span>Facebook</span>
+            </div>
+            <p>Качественная уходовая косметика. Выбирайте нас</p>
+        </div>
+
+        <div>
+            <h4>Меню</h4>
+            <p><a href="#">Каталог</a></p>
+            <p><a href="#">О нас</a></p>
+            <p><a href="#">Доставка и оплата</a></p>
+        </div>
+
+        <div>
+            <h4>Контакты</h4>
+            <p><a href="tel:+79835678844">8 983 567 88 44</a></p>
+            <p><a href="mailto:magazinkosm@gmail.com">magazinkosm@gmail.com</a></p>
+            <p>Самара, ул. Ново-Садовая</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('menuOverlay');
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    function closeMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('menuOverlay');
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+    }
+
+    function toggleDropdown(event) {
+        if (window.innerWidth <= 1024) {
+            event.preventDefault();
+            const dropdown = document.getElementById('catalogDropdown');
+            dropdown.classList.toggle('active');
+        }
+    }
+
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('catalogDropdown');
+        if (dropdown && !dropdown.contains(event.target)) {
+            dropdown.classList.remove('active');
+        }
+    });
+</script>
+
+</body>
+</html>
